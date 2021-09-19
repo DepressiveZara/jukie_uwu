@@ -1,6 +1,6 @@
 module.exports.config = {
   name: 'listbox',
-  version: '1.0.0',
+  version: '1.0.1',
   credits: 'manhIT', //Jukie fix ban box
   hasPermssion: 2,
   description: 'List thread bot đã tham gia',
