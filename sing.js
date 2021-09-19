@@ -2,7 +2,7 @@ module.exports.config = {
 	name: "sing",
 	version: "1.0.0",
 	hasPermssion: 0,
-	credits: "CatalizCS mod video by Jukie",
+	credits: "CatalizCS",//mod sing by Jukie
 	description: "Phát video thông qua link YouTube hoặc từ khoá tìm kiếm",
 	commandCategory: "Phương tiện",
 	usages: "[Text]",
