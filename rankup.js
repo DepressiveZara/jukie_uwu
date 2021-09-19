@@ -1,6 +1,6 @@
 module.exports.config = {
 	name: "rankup",
-	version: "1.0",
+	version: "1.1",
 	hasPermssion: 1,
 	credits: "⚡️D-Jukie",
 	description: "Đếm kinh nghiệm cho việc check tương tác trong hệ thống dữ liệu bot/nhóm",
