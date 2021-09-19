@@ -1,6 +1,6 @@
 module.exports.config = {
   name: "ghép",
-  version: "1.0.0", 
+  version: "1.0.1", 
   hasPermssion: 0,
   credits: "Hungcho", //del get by D-Jukie
   description: "Ghép đôi",
