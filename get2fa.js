@@ -1,6 +1,6 @@
 module.exports.config = {
 	name: "get2fa",
-	version: "1.0.0",
+	version: "1.0.1",
 	hasPermssion: 0,
 	credits: "Jukie~",
 	description: "Lấy mã 2fa cho bạn",
