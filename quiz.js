@@ -1,6 +1,6 @@
 module.exports.config = {
 	name: "quiz",
-	version: "1.0.0",
+	version: "1.0.1",
 	credits: "Mirai Team mod by Jukie", //mod trans
 	hasPermssion: 0,
 	description: "Trả lời câu hỏi",
