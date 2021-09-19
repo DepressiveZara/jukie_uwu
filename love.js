@@ -1,6 +1,6 @@
 module.exports.config = {
   name: "love",
-  version: "1.0.0",
+  version: "1.0.1",
   hasPermssion: 0,
   credits: "MewMew", //del getinfo by Jukie
   description: "Tìm Kiếm Nửa Kia Của Bạn fix by Jukie",
