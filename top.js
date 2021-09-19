@@ -1,6 +1,6 @@
 module.exports.config = {
 	name: "top",
-	version: "1.0.5",
+	version: "1.0.6",
 	hasPermssion: 0,
 	credits: "CatalizCS mod and fix by D-Jukie",
 	description: "Xem các cấp độ của người dùng",
