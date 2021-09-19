@@ -4,7 +4,7 @@
 */
 module.exports.config = {
     name: "working",
-    version: "1.0.1",
+    version: "1.0.2",
     hasPermssion: 0,
     credits: "⚡D-Jukie", 
     description: "Làm việc để có tiền, có làm thì mới có ăn",
