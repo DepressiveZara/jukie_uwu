@@ -1,6 +1,6 @@
 module.exports.config = {
 	name: "cony",
-	version: "1.0.0", 
+	version: "1.0.1", 
 	hasPermssion: 0,
 	credits: "⚡D-Jukie",
 	description: "Tỉ lệ có Ny của bạn trong năm nay",
