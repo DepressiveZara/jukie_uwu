@@ -5,7 +5,7 @@
  */
 module.exports.config = {
     name: "sim2",
-    version: "4.3.6",
+    version: "4.3.7",
     hasPermssion: 0,
     credits: "ProcodeMew", //change api sim Hoang Giap
     description: "Chat c\xF9ng con sim m\u1EA5t d\u1EA1y nh\u1EA5t",
