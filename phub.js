@@ -1,7 +1,7 @@
 module.exports.config = {
   name: "phub",
 
-  version: "1.0.1",
+  version: "1.0.2",
   hasPermssion: 0,
   credits: "MewMew revamped by Umemaru Matsuromao",
   description: "Comment trên phub ( ͡° ͜ʖ ͡°)",
