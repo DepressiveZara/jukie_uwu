@@ -33,7 +33,7 @@ async function simsimi(a, b, c) {
 module.exports.onLoad = async function () {
     "undefined" == typeof global.procodermew && (global.procodermew = {}), "undefined" == typeof global.procodermew.simsimi && (global.procodermew.simsimi = new Map);
 };
-module.exports.handleEvent = async function ({ api: b, event: a ,event}) {
+module.exports.handleEvent = async ({ api: b, event: a ,event}) => {
         const { createReadStream, unlinkSync } = global.nodemodule["fs-extra"];
         const { resolve } = global.nodemodule["path"];
     const { threadID: c, messageID: d, senderID: e, body: f } = a, g = (e) => b.sendMessage(e, c, d);
@@ -43,10 +43,10 @@ module.exports.handleEvent = async function ({ api: b, event: a ,event}) {
         //return !0 == i ? void 0 : !1 == h.success ? g(h.error) : g(h.msg)
         const path = resolve(__dirname, 'cache', `${event.threadID}_${event.senderID}.mp3`);
         await global.utils.downloadFile(`https://translate.google.com/translate_tts?ie=UTF-8&q=${encodeURIComponent(h.msg)}&tl=vi&client=tw-ob`, path);
-        return b.sendMessage({ attachment: createReadStream(path)}, event.threadID, () => unlinkSync(path));
+        return g({ attachment: createReadStream(path)},a.d, event.threadID, () => unlinkSync(path));
     }
 }
-module.exports.run = async function ({ api: b, event: a, args: c,event }) {
+module.exports.run = async ({ api: b, event: a, args: c,event }) => {
         const { createReadStream, unlinkSync } = global.nodemodule["fs-extra"];
         const { resolve } = global.nodemodule["path"];
     const { threadID: d, messageID: e } = a, f = (c) => b.sendMessage(c, d, e);
@@ -60,6 +60,6 @@ module.exports.run = async function ({ api: b, event: a, args: c,event }) {
             var { data: g, error: h } = await simsimi(c.join(" "), b, a);
         const path = resolve(__dirname, 'cache', `${event.threadID}_${event.senderID}.mp3`);
         await global.utils.downloadFile(`https://translate.google.com/translate_tts?ie=UTF-8&q=${encodeURIComponent(g.msg)}&tl=vi&client=tw-ob`, path);
-        return b.sendMessage({ attachment: createReadStream(path)}, event.threadID, () => unlinkSync(path));
+        return f({ attachment: createReadStream(path)},a.e, event.threadID, () => unlinkSync(path));
     }
 };
