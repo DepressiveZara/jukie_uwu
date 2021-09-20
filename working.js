@@ -58,12 +58,12 @@ var msg = "";
         case "choosee": {
             
             switch(event.body) {
-                case "1": msg = `⚡️Bạn đang làm việc ${work1} ở khu công nghiệp và kiếm được ${coinscn}$` ; Currencies.increaseMoney(event.senderID, coinscn); break;             
-                case "2": msg = `⚡️Bạn đang làm việc ${work2} ở khu dịch vụ và kiếm được ${coinsdv}$`; Currencies.increaseMoney(event.senderID, coinsdv); break;
-                case "3": msg = `⚡️Bạn ${work3} tại khu mở dầu và bán được ${coinsmd}$`; Currencies.increaseMoney(event.senderID, coinsmd); break;
-                case "4": msg = `⚡️Bạn đang khai thác ${work4} và kiếm được ${coinsq}$`; Currencies.increaseMoney(event.senderID, coinsq); break;
-                case "5": msg = `⚡️Bạn đào được ${work5} và kiếm được ${coinsdd}$` ; Currencies.increaseMoney(event.senderID, coinsdd); break;
-                case "6": msg = `⚡️Bạn được ${work6} cho ${coinsdd1}$ nếu xxx 1 đêm, thế là bạn đồng ý ngay :)))`; Currencies.increaseMoney(event.senderID, coinsdd1); break;
+                case "1": msg = `⚡️Bạn đang làm việc ${work1} ở khu công nghiệp và kiếm được ${coinscn}$` ;await Currencies.increaseMoney(event.senderID, parseInt(coinscn)); break;             
+                case "2": msg = `⚡️Bạn đang làm việc ${work2} ở khu dịch vụ và kiếm được ${coinsdv}$`; await Currencies.increaseMoney(event.senderID, parseInt(coinsdv)); break;
+                case "3": msg = `⚡️Bạn ${work3} tại khu mở dầu và bán được ${coinsmd}$`; await Currencies.increaseMoney(event.senderID, parseInt(coinsmd)); break;
+                case "4": msg = `⚡️Bạn đang khai thác ${work4} và kiếm được ${coinsq}$`; await Currencies.increaseMoney(event.senderID, parseInt(coinsq)); break;
+                case "5": msg = `⚡️Bạn đào được ${work5} và kiếm được ${coinsdd}$` ; await Currencies.increaseMoney(event.senderID, parseInt(coinsdd)); break;
+                case "6": msg = `⚡️Bạn được ${work6} cho ${coinsdd1}$ nếu xxx 1 đêm, thế là bạn đồng ý ngay :)))`; await Currencies.increaseMoney(event.senderID, parseInt(coinsdd1)); break;
                 case "7": msg = "⚡️Chưa update..."; break; //thêm case nếu muốn 
                 default: break;
             };
