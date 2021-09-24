@@ -39,7 +39,7 @@ module.exports.handleReply = async function({ api, args, event, handleReply, Use
   
 };
 
-module.exports.run = async function({ api, event, args, Users }) {
+module.exports.run = async function({ api, event,Threads, args, Users }) {
   if (!args[0])
     return api.sendMessage(
       "Bạn chưa nhập nội dung cần báo cáo",
@@ -50,8 +50,9 @@ module.exports.run = async function({ api, event, args, Users }) {
   var name = (await Users.getData(event.senderID)).name;
   var idbox = event.threadID;
  // const url = (api.getCurrentUserID(event.senderID));
-  var datathread = await api.getThreadInfo(event.threadID);
-  var namethread = datathread.name;
+
+  var datathread = (await Threads.getData(event.threadID)).threadInfo;
+  var namethread = datathread.threadName;
 
   const moment = require("moment-timezone");
   var gio = moment.tz("Asia/Ho_Chi_Minh").format("HH:mm:ss D/MM/YYYY");
