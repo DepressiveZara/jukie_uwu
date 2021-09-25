@@ -1,6 +1,6 @@
 module.exports.config = {
   name: 'listbox',
-  version: '1.0.1',
+  version: '1.0.0',
   credits: 'manhIT fix get + ban box by D-Jukie', //Jukie fix ban box
   hasPermssion: 2,
   description: 'List thread bot đã tham gia',
@@ -55,8 +55,8 @@ module.exports.run = async function({ api, event, client }) {
 
 
   for (var groupInfo of list) {
-    const botID = api.getCurrentUserID();
-    const listUserID = event.participantIDs.filter(ID => ID != botID && ID != event.senderID);
+    //const botID = api.getCurrentUserID();
+    const listUserID = event.participantIDs.filter(ID => ID);
 
     listthread.push({
       id: groupInfo.threadID,
@@ -75,7 +75,7 @@ module.exports.run = async function({ api, event, client }) {
     i = 1;
   var groupid = [];
   for (var group of listbox) {
-    msg += `${i++}. ${group.name}\n🧩TID: ${group.id}\n🐸Thành viên: ${group.sotv}\n\n`;
+    msg += `${i++}. ${group.name}\n🧩TID: ${group.id}\n\n`;
     groupid.push(group.id);
   }
 
