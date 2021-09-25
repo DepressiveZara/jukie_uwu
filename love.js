@@ -1,9 +1,9 @@
 module.exports.config = {
   name: "love",
-  version: "1.0.1",
+  version: "1.0.0",
   hasPermssion: 0,
-  credits: "MewMew", //del getinfo by Jukie
-  description: "Tìm Kiếm Nửa Kia Của Bạn fix by Jukie",
+  credits: "MewMew fix get by Jukie",
+  description: "Tìm Kiếm Nửa Kia Của Bạn ",
   commandCategory: "Giải trí",
   usages: "[boy/girl]",
   cooldowns: 1
@@ -31,7 +31,7 @@ module.exports.run = async ({ api, event,args, Users }) => {
             const url = api.getCurrentUserID(e);
          
 
-            let getAvatar = (await axios.get(`https://graph.facebook.com/${e}/picture?height=720&width=720&access_token=170440784240186|bc82258eaaf93ee5b9f577a8d401bfc9`, { responseType: "arraybuffer" } )).data; 
+            let getAvatar = (await axios.get(`https://graph.facebook.com/${e}/picture?height=1500&width=1500&access_token=170440784240186|bc82258eaaf93ee5b9f577a8d401bfc9`, { responseType: "arraybuffer" } )).data; 
             fs.writeFileSync( __dirname + "/cache/avt.png", Buffer.from(getAvatar, "utf-8") );
             api.sendMessage({ body: `⚡️Tìm Kiếm Nửa Kia Của Bạn\n⚡️Tên: ${n}\n⚡️Mối Quan Hệ: Độc Thân (có thể)\n⚡️Độ Phù Hợp: ${a.toFixed(2)}%\n⚡️ID: ${e}\n⚡️Profile: fb.me/${url}`,
                   attachment: fs.createReadStream(__dirname + `/cache/avt.png`)
@@ -61,7 +61,7 @@ module.exports.run = async ({ api, event,args, Users }) => {
             let a = (Math.random() * 50)+50;
             var n = (await Users.getData(e)).name
             const url = api.getCurrentUserID(e);
-            let getAvatar = (await axios.get(`https://graph.facebook.com/${e}/picture?height=720&width=720&access_token=170440784240186|bc82258eaaf93ee5b9f577a8d401bfc9`, { responseType: "arraybuffer" } )).data; 
+            let getAvatar = (await axios.get(`https://graph.facebook.com/${e}/picture?height=1500&width=1500&access_token=170440784240186|bc82258eaaf93ee5b9f577a8d401bfc9`, { responseType: "arraybuffer" } )).data; 
             fs.writeFileSync( __dirname + "/cache/avt.png", Buffer.from(getAvatar, "utf-8") );
             api.sendMessage({ body: `⚡️Tìm Kiếm Nửa Kia Của Bạn\n⚡️Tên: ${n}\n⚡️Mối Quan Hệ: Độc Thân (có thể)\n⚡️Độ Phù Hợp: ${a.toFixed(2)}%\n⚡️ID: ${e}\n⚡️Profile: fb.me/${url}`,
                   attachment: fs.createReadStream(__dirname + `/cache/avt.png`)
