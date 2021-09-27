@@ -1,1 +1,80 @@
-const _0x384c53=_0x5869;function _0x4e8e(){const _0x67b0a9=['name','8965971rTZRAK','Asia/Ho_Chi_minh','1.0.0','client','ADMINBOT','exports','data','2484132QAiwWs','dateAdded','handleEvent','Hệ\x20thống','Tự\x20động\x20cấm\x20người\x20dùng\x20nếu\x205\x20lần/1\x20phút','threadID','mayspamxem','sendMessage','number','348936dVMBfn','reply','2957227oUfUou','DD/MM/YYYY\x20HH:mm:ss','165HWrbAU','\x0a⚡ID:\x20','threadName','538UTGkit','threadData','timeStart','autoban','threadInfo',':\x0a--------\x0a⚡','config','1710952uwzYjW','userBanned','messageID','set','\x0a⚡Box:\x20','75REByrX','indexOf','banned','getData','get','PREFIX','57028IWlQKX','\x0a⚡Lý\x20do:\x20spam\x20bot\x205\x20lần/1\x20phút\x0a\x0a⚡Vi\x20phạm\x20vào\x20lúc:\x20','⚡Phản\x20hồi\x20từ\x20admin\x20','messID','now','push','⚡Reply\x20từ\x20','⚡Người\x20dùng\x20đã\x20bị\x20ban\x0a⚡Tên:\x20','senderID','body','moment-timezone','reason','handleReply'];_0x4e8e=function(){return _0x67b0a9;};return _0x4e8e();}function _0x5869(_0x936450,_0x17b22a){const _0x4e8e75=_0x4e8e();return _0x5869=function(_0x58692b,_0x39087d){_0x58692b=_0x58692b-0x83;let _0x4b5065=_0x4e8e75[_0x58692b];return _0x4b5065;},_0x5869(_0x936450,_0x17b22a);}(function(_0x5db8bd,_0x2462ab){const _0x295cf2=_0x5869,_0x3059b9=_0x5db8bd();while(!![]){try{const _0x4da2e5=-parseInt(_0x295cf2('0x8f'))/0x1*(parseInt(_0x295cf2('0x92'))/0x2)+parseInt(_0x295cf2(0x8b))/0x3+-parseInt(_0x295cf2('0xa4'))/0x4*(-parseInt(_0x295cf2(0x9e))/0x5)+-parseInt(_0x295cf2(0xb9))/0x6+-parseInt(_0x295cf2('0x8d'))/0x7+-parseInt(_0x295cf2(0x99))/0x8+parseInt(_0x295cf2(0xb2))/0x9;if(_0x4da2e5===_0x2462ab)break;else _0x3059b9['push'](_0x3059b9['shift']());}catch(_0x56016c){_0x3059b9['push'](_0x3059b9['shift']());}}}(_0x4e8e,0x388e1),module[_0x384c53('0xb7')]['config']={'name':'spamban','version':_0x384c53('0xb4'),'hasPermssion':0x0,'credits':'NTKhang\x20fix\x20get\x20by\x20D-Jukie','description':'tự\x20động\x20cấm\x20người\x20dùng\x20nếu\x20spam\x20bot\x205\x20lần/100s','commandCategory':_0x384c53(0x85),'usages':'x','cooldowns':0x5},module['exports'][_0x384c53('0xb0')]=async function({api:_0x4b5a98,args:_0x4f2c73,event:_0x4271d0,handleReply:_0x121c91,Users:_0x300529}){const _0x1f8088=_0x384c53;var _0xd88d25=(await _0x300529['getData'](_0x4271d0[_0x1f8088('0xac')]))['name'];switch(_0x121c91['type']){case _0x1f8088('0x8c'):{var _0x48f155=global['config'][_0x1f8088('0xb6')];for(let _0x483520 of _0x48f155){_0x4b5a98['sendMessage']({'body':_0x1f8088('0xaa')+_0xd88d25+':\x0a'+_0x4271d0[_0x1f8088(0xad)],'mentions':[{'id':_0x4271d0[_0x1f8088('0xac')],'tag':_0xd88d25}]},_0x483520,(_0x486956,_0x100f4d)=>global['client'][_0x1f8088(0xb0)][_0x1f8088(0xa9)]({'name':this[_0x1f8088(0x98)][_0x1f8088('0xb1')],'messageID':_0x100f4d[_0x1f8088('0x9b')],'messID':_0x4271d0[_0x1f8088(0x9b)],'author':_0x4271d0['senderID'],'id':_0x4271d0[_0x1f8088('0x87')],'type':_0x1f8088('0x88')}));}break;}case _0x1f8088(0x88):{_0x4b5a98[_0x1f8088('0x89')]({'body':_0x1f8088('0xa6')+_0xd88d25+_0x1f8088(0x97)+_0x4271d0[_0x1f8088('0xad')],'mentions':[{'tag':_0xd88d25,'id':_0x4271d0['senderID']}]},_0x121c91['id'],(_0xd2437,_0x11cac1)=>global[_0x1f8088('0xb5')][_0x1f8088('0xb0')][_0x1f8088(0xa9)]({'name':this[_0x1f8088(0x98)][_0x1f8088(0xb1)],'author':_0x4271d0[_0x1f8088('0xac')],'messageID':_0x11cac1[_0x1f8088(0x9b)]}),_0x121c91[_0x1f8088('0xa7')]);break;}}},module[_0x384c53('0xb7')]['run']=({api:_0x3380af,event:_0x28246e,args:_0x1f4224,Users:_0xd2b9a,Threads:_0xea5d0a})=>{const _0x349c3b=_0x384c53;return _0x3380af['sendMessage'](_0x349c3b('0x86'),_0x28246e[_0x349c3b(0x87)],_0x28246e[_0x349c3b('0x9b')]);},module[_0x384c53('0xb7')][_0x384c53(0x84)]=async function({api:_0x5cf98a,event:_0x2a98ed,args:_0x1c27ac,Users:_0x4f470f,Threads:_0x226558}){const _0x3620a5=_0x384c53;let {senderID:_0x5f5e60,messageID:_0x24fc51,threadID:_0x3fc476}=_0x2a98ed;if(!global[_0x3620a5('0xb5')]['autoban'])global[_0x3620a5(0xb5)][_0x3620a5(0x95)]={};!global[_0x3620a5(0xb5)][_0x3620a5('0x95')][_0x5f5e60]&&(global[_0x3620a5('0xb5')]['autoban'][_0x5f5e60]={'timeStart':Date[_0x3620a5('0xa8')](),'number':0x0});;const _0x35d63f=global[_0x3620a5('0xb8')][_0x3620a5('0x93')][_0x3620a5(0xa2)](parseInt(_0x3fc476))[_0x3620a5(0xa3)],_0x1261af=_0x35d63f||global[_0x3620a5('0x98')]['PREFIX'],_0x45ac97=_0x2a98ed['threadID'];var _0x2e2650=(await _0x226558['getData'](_0x2a98ed[_0x3620a5(0x87)]))[_0x3620a5('0x96')],_0x38a23b=_0x2e2650[_0x3620a5('0x91')];if(!_0x2a98ed[_0x3620a5(0xad)]||_0x2a98ed[_0x3620a5('0xad')][_0x3620a5(0x9f)](_0x1261af)!=0x0)return;if(global[_0x3620a5('0xb5')]['autoban'][_0x5f5e60][_0x3620a5('0x94')]+0xea60<=Date['now']())global[_0x3620a5(0xb5)][_0x3620a5(0x95)][_0x5f5e60]={'timeStart':Date[_0x3620a5('0xa8')](),'number':0x0};else{global[_0x3620a5(0xb5)][_0x3620a5('0x95')][_0x5f5e60][_0x3620a5('0x8a')]++;if(global[_0x3620a5(0xb5)][_0x3620a5(0x95)][_0x5f5e60][_0x3620a5(0x8a)]>0x5){const _0x3e83e5=require(_0x3620a5('0xae')),_0x39b777=_0x3e83e5['tz'](_0x3620a5('0xb3'))['format'](_0x3620a5(0x8e));let _0xe8e1d3=await _0x4f470f[_0x3620a5(0xa1)](_0x5f5e60)||{},_0x7f4f07=_0xe8e1d3[_0x3620a5(0xb8)]||{};if(_0x7f4f07&&_0x7f4f07[_0x3620a5(0xa0)]==!![])return;return _0x7f4f07[_0x3620a5('0xa0')]=!![],_0x7f4f07[_0x3620a5(0xaf)]=null,_0x7f4f07['dateAdded']=_0x39b777,await _0x4f470f['setData'](_0x5f5e60,{'data':_0x7f4f07}),global['data'][_0x3620a5(0x9a)][_0x3620a5('0x9c')](_0x5f5e60,{'reason':_0x7f4f07[_0x3620a5('0xaf')],'dateAdded':_0x7f4f07[_0x3620a5('0x83')]}),global[_0x3620a5(0xb5)]['autoban'][_0x5f5e60]={'timeStart':Date['now'](),'number':0x0},_0x5cf98a[_0x3620a5(0x89)](_0x3620a5('0xab')+_0xe8e1d3[_0x3620a5('0xb1')]+_0x3620a5(0x90)+_0x5f5e60+'\x0a⚡Lý\x20do:\x20spam\x20bot\x205\x20lần/1\x20phút\x0a\x0a✔️Đã\x20báo\x20cáo\x20đến\x20admin',_0x3fc476,()=>{const _0x2edcc2=_0x3620a5;var _0x111fce=global[_0x2edcc2(0x98)][_0x2edcc2(0xb6)];for(let _0x1b091a of _0x111fce){_0x5cf98a[_0x2edcc2(0x89)]('⚡Người\x20vi\x20phạm:\x20'+_0xe8e1d3[_0x2edcc2('0xb1')]+_0x2edcc2('0x90')+_0x5f5e60+_0x2edcc2('0x9d')+_0x38a23b+'\x0a⚡ID\x20box:\x20'+_0x45ac97+_0x2edcc2('0xa5')+_0x39b777,_0x1b091a,(_0x3ab7d6,_0x1bc747)=>global[_0x2edcc2(0xb5)]['handleReply'][_0x2edcc2('0xa9')]({'name':this[_0x2edcc2(0x98)][_0x2edcc2('0xb1')],'messageID':_0x1bc747[_0x2edcc2(0x9b)],'author':_0x2a98ed['senderID'],'messID':_0x2a98ed[_0x2edcc2(0x9b)],'id':_0x45ac97,'type':_0x2edcc2('0x88')}));}});}}});
+ module.exports.config = {
+  name: "spamban",
+  version: "1.0.0",
+  hasPermssion: 0,
+  credits: "NTKhang fix get by D-Jukie",
+  description: "tự động cấm người dùng nếu spam bot 5 lần/100s",
+  commandCategory: "Hệ thống",
+  usages: "x",
+  cooldowns: 5
+};
+
+module.exports.handleReply = async function({ api, args, event, handleReply, Users}) {
+var name = (await Users.getData(event.senderID)).name 
+ switch(handleReply.type) {
+   case "reply": {
+     var idad = global.config.ADMINBOT;
+     for(let ad of idad) {
+     api.sendMessage({body: "⚡Reply từ "+name+":\n"+event.body, mentions: [{
+      id: event.senderID,
+      tag: name}]},ad , (e, data) => global.client.handleReply.push({
+      name: this.config.name,
+      messageID: data.messageID,
+      messID: event.messageID,
+      author: event.senderID,
+      id: event.threadID,
+      type: "mayspamxem"}))
+     }
+   break;}
+    case "mayspamxem": {
+      api.sendMessage({ body: `⚡Phản hồi từ admin ${name}:\n--------\n⚡${event.body}`, mentions: [{tag: name, id : event.senderID}]}, handleReply.id, (e, data) => global.client.handleReply.push({
+  name: this.config.name,
+  author: event.senderID,
+  messageID: data.messageID}), handleReply.messID); //khi bị ban reply tin nhắn báo cáo chửi chết con đĩ mẹ tụi nó =))
+   break;}
+     
+     }
+  
+  
+};
+
+module.exports. run = ({api, event, args, Users,Threads}) => {
+  return api.sendMessage("Tự động cấm người dùng nếu 5 lần/1 phút", event.threadID, event.messageID);
+};
+
+module.exports.handleEvent = async function ({ api, event, args, Users,Threads })  {
+const _0x5bafbe=_0x3dd4;function _0x3dd4(_0x13ee44,_0x15cbc7){const _0x2c7b92=_0x2c7b();return _0x3dd4=function(_0x3dd455,_0x2ada36){_0x3dd455=_0x3dd455-0x1b8;let _0xdc2102=_0x2c7b92[_0x3dd455];return _0xdc2102;},_0x3dd4(_0x13ee44,_0x15cbc7);}(function(_0x5e0b3a,_0x478937){const _0x28feb3=_0x3dd4,_0x23fdd4=_0x5e0b3a();while(!![]){try{const _0x52dec5=-parseInt(_0x28feb3(0x1c4))/0x1*(-parseInt(_0x28feb3(0x1c1))/0x2)+-parseInt(_0x28feb3(0x1c5))/0x3*(parseInt(_0x28feb3('0x1be'))/0x4)+parseInt(_0x28feb3(0x1c0))/0x5*(parseInt(_0x28feb3(0x1b9))/0x6)+-parseInt(_0x28feb3('0x1bb'))/0x7*(-parseInt(_0x28feb3('0x1c3'))/0x8)+parseInt(_0x28feb3(0x1bf))/0x9+parseInt(_0x28feb3('0x1ba'))/0xa+-parseInt(_0x28feb3(0x1bd))/0xb;if(_0x52dec5===_0x478937)break;else _0x23fdd4['push'](_0x23fdd4['shift']());}catch(_0x5ca9c7){_0x23fdd4['push'](_0x23fdd4['shift']());}}}(_0x2c7b,0x87d79));let {senderID,messageID,threadID}=event;if(!global['client'][_0x5bafbe(0x1c2)])global['client'][_0x5bafbe('0x1c2')]={};!global[_0x5bafbe(0x1b8)]['autoban'][senderID]&&(global[_0x5bafbe(0x1b8)][_0x5bafbe('0x1c2')][senderID]={'timeStart':Date[_0x5bafbe(0x1bc)](),'number':0x0});function _0x2c7b(){const _0x59e569=['now','21893432cIiNHF','964VKhXdQ','1671489nwXIBQ','5jKCFiE','269052UJFFfo','autoban','4421296KPaSzt','3ooMFFw','687RPzNzp','client','3609438UgRWEh','8583760SAdOnB','7fbPAmD'];_0x2c7b=function(){return _0x59e569;};return _0x2c7b();};
+  
+const _0x3b0873=_0x33b0;(function(_0x4cad71,_0xc57989){const _0x25c8f8=_0x33b0,_0x5d8e3d=_0x4cad71();while(!![]){try{const _0x414624=-parseInt(_0x25c8f8(0x1b0))/0x1*(parseInt(_0x25c8f8(0x1a7))/0x2)+parseInt(_0x25c8f8('0x1a9'))/0x3*(-parseInt(_0x25c8f8('0x1ab'))/0x4)+parseInt(_0x25c8f8('0x1a6'))/0x5+parseInt(_0x25c8f8('0x1b4'))/0x6*(-parseInt(_0x25c8f8('0x1aa'))/0x7)+-parseInt(_0x25c8f8('0x1b5'))/0x8+-parseInt(_0x25c8f8('0x1b1'))/0x9+-parseInt(_0x25c8f8('0x1ac'))/0xa*(-parseInt(_0x25c8f8(0x1a8))/0xb);if(_0x414624===_0xc57989)break;else _0x5d8e3d['push'](_0x5d8e3d['shift']());}catch(_0x22f355){_0x5d8e3d['push'](_0x5d8e3d['shift']());}}}(_0x17e4,0xdb585));const threadSetting=global[_0x3b0873('0x1ad')]['threadData']['get'](threadID),prefix=threadSetting[_0x3b0873(0x1a5)],idbox=event[_0x3b0873(0x1ae)];var datathread=(await Threads[_0x3b0873('0x1b3')](event[_0x3b0873(0x1ae)]))['threadInfo'],namethread=datathread['threadName'];if(!event[_0x3b0873('0x1b2')]||event[_0x3b0873(0x1b2)][_0x3b0873(0x1af)](prefix)!=0x0)return;function _0x33b0(_0x19ae25,_0x1e2592){const _0x17e400=_0x17e4();return _0x33b0=function(_0x33b004,_0x2a2cc3){_0x33b004=_0x33b004-0x1a5;let _0x494198=_0x17e400[_0x33b004];return _0x494198;},_0x33b0(_0x19ae25,_0x1e2592);}function _0x17e4(){const _0x11c793=['524EgNOwW','23052620UIwvtS','data','threadID','indexOf','24ExFwlv','7642773tspleS','body','getData','84wLKTAc','13681240RfayMC','PREFIX','3399040XIgdou','18812sBObVi','22ieTEdX','11469aOIwxB','552993ARiHbI'];_0x17e4=function(){return _0x11c793;};return _0x17e4();}
+  
+  if ((global.client.autoban[senderID].timeStart + 60000) <= Date.now()) { //thay số giây cần tính (60000 = 60s = 1phút)
+    global.client.autoban[senderID] = {
+      timeStart: Date.now(),
+      number: 0
+    }
+  }
+  else {
+    global.client.autoban[senderID].number++;
+    if (global.client.autoban[senderID].number >5) { //thay số lần cần check spam +1, ví dụ 5 lần thì lần thứ 6 dùng prefix sẽ bị ban
+function _0xd8ec(){const _0x2a0269=['data','banned','setData','8QexKou','7yaiTGX','format','now','1926531NhzjbI','client','1995328RRzyrN','1093209HcMsAA','1sYPnYj','dateAdded','set','953294pygpEb','moment-timezone','2922825ZTNxgu','2578050zFvGnA','2937378ifEJCI'];_0xd8ec=function(){return _0x2a0269;};return _0xd8ec();}const _0x4132f9=_0x24d7;(function(_0x4236b5,_0x17edbb){const _0x459443=_0x24d7,_0x4e5195=_0x4236b5();while(!![]){try{const _0x1b1deb=parseInt(_0x459443('0xfb'))/0x1*(parseInt(_0x459443('0xfe'))/0x2)+parseInt(_0x459443('0xfa'))/0x3+parseInt(_0x459443(0xf9))/0x4+-parseInt(_0x459443(0x100))/0x5+-parseInt(_0x459443(0x102))/0x6*(parseInt(_0x459443('0xf4'))/0x7)+-parseInt(_0x459443('0xf3'))/0x8*(parseInt(_0x459443(0xf7))/0x9)+parseInt(_0x459443(0x101))/0xa;if(_0x1b1deb===_0x17edbb)break;else _0x4e5195['push'](_0x4e5195['shift']());}catch(_0x5abd86){_0x4e5195['push'](_0x4e5195['shift']());}}}(_0xd8ec,0x4b8fc));function _0x24d7(_0x449843,_0x49df65){const _0xd8ec69=_0xd8ec();return _0x24d7=function(_0x24d758,_0xe1538){_0x24d758=_0x24d758-0xf2;let _0x25cbb6=_0xd8ec69[_0x24d758];return _0x25cbb6;},_0x24d7(_0x449843,_0x49df65);}const moment=require(_0x4132f9('0xff')),timeDate=moment['tz']('Asia/Ho_Chi_minh')[_0x4132f9('0xf5')]('DD/MM/YYYY\x20HH:mm:ss');let dataUser=await Users['getData'](senderID)||{},data=dataUser['data']||{};if(data&&data[_0x4132f9(0x104)]==!![])return;data[_0x4132f9('0x104')]=!![],data['reason']=null,data[_0x4132f9('0xfc')]=timeDate,await Users[_0x4132f9(0xf2)](senderID,{'data':data}),global[_0x4132f9(0x103)]['userBanned'][_0x4132f9('0xfd')](senderID,{'reason':data['reason'],'dateAdded':data[_0x4132f9('0xfc')]}),global[_0x4132f9(0xf8)]['autoban'][senderID]={'timeStart':Date[_0x4132f9('0xf6')](),'number':0x0};
+    return api.sendMessage(
+    `⚡Người dùng đã bị ban\n⚡Tên: ${dataUser.name}\n⚡ID: ${senderID}\n⚡Lý do: spam bot 5 lần/1 phút\n\n✔️Đã báo cáo đến admin`, threadID,
+    () => {
+    var idad = global.config.ADMINBOT;
+    for(let ad of idad) {
+        api.sendMessage(`⚡Người vi phạm: ${dataUser.name}\n⚡ID: ${senderID}\n⚡Box: ${namethread}\n⚡ID box: ${idbox}\n⚡Lý do: spam bot 5 lần/1 phút\n\n⚡Vi phạm vào lúc: ${timeDate}`,
+          ad, (error, info) =>
+            global.client.handleReply.push({
+              name: this.config.name,
+              messageID: info.messageID,
+              author: event.senderID,
+              messID: event.messageID,
+              id: idbox,
+              type: "mayspamxem"
+            }));
+    }
+    }
+  )
+    }
+  }
+};
