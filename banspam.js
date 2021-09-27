@@ -1,6 +1,6 @@
  module.exports.config = {
   name: "spamban",
-  version: "1.0.0",
+  version: "1.7.0",
   hasPermssion: 0,
   credits: "NTKhang fix get by D-Jukie",
   description: "tự động cấm người dùng nếu spam bot 5 lần/100s",
