@@ -8,9 +8,36 @@ module.exports.config = {
     usages: "[username]",
     cooldowns: 5,
     envConfig: {
-        APIKEY: "a012e05802msh4ce48bff26d5c0ap151d85jsn4edde7f89de0" //lấy tại https://rapidapi.com/AdKT36/api/video-nwm/
+        APIKEY: "a012e05802msh4ce48bff26d5c0ap151d85jsn4edde7f89de0" //https://rapidapi.com/AdKT36/api/video-nwm/
     }
 };
 module.exports.run = async function ({ api, event, args, utils  })  {
-function _0xb4da(){const _0x485b52=['senderID','playAddr','⚡Bạn\x20phải\x20ngập\x20url\x20video\x20tiktok\x20!!!','get','utf-8','24CsIwbi','size','sendMessage','nodemodule','configModule','1654sPXiDM','ins','.mp4','https://video-nwm.p.rapidapi.com/url/','fs-extra','1345MEVLkW','item','threadID','from','1732kUUFph','7696120agQhez','511304GWiDmI','video','372483BanTOe','request','axios','979424QlzYxD','data','messageID','484113uVuZWK','⚡Không\x20thể\x20gửi\x20file\x20vì\x20dung\x20lượng\x20lớn\x20hơn\x2025MB.','createReadStream','1650HiuXPJ','/cache/','unlinkSync'];_0xb4da=function(){return _0x485b52;};return _0xb4da();}(function(_0xb61ad9,_0x352925){function _0x5d7668(_0x195cbc,_0x50fa50){return _0x1d9b(_0x50fa50-0x187,_0x195cbc);}const _0x234048=_0xb61ad9();while(!![]){try{const _0x60c160=parseInt(_0x5d7668(0x209,0x1fe))/0x1+-parseInt(_0x5d7668('0x205',0x216))/0x2*(-parseInt(_0x5d7668('0x1fe',0x209))/0x3)+-parseInt(_0x5d7668(0x1f5,'0x1fc'))/0x4*(parseInt(_0x5d7668('0x214',0x21b))/0x5)+-parseInt(_0x5d7668('0x200','0x211'))/0x6*(-parseInt(_0x5d7668('0x1f7','0x206'))/0x7)+parseInt(_0x5d7668('0x207',0x203))/0x8+-parseInt(_0x5d7668('0x1f2',0x200))/0x9+-parseInt(_0x5d7668('0x1f7',0x1fd))/0xa;if(_0x60c160===_0x352925)break;else _0x234048['push'](_0x234048['shift']());}catch(_0x3ad439){_0x234048['push'](_0x234048['shift']());}}}(_0xb4da,0x6adee));function _0x10fb82(_0x19a930,_0x1e37cc){return _0x1d9b(_0x1e37cc- -'0x336',_0x19a930);}const {APIKEY}=global[_0x10fb82(-0x2ad,-0x2a8)][_0x10fb82(-0x29d,-'0x2a6')],axios=global[_0x10fb82(-'0x2ac',-'0x2a9')][_0x10fb82(-'0x2bf',-'0x2bb')],fs=global['nodemodule'][_0x10fb82(-0x2b4,-0x2a3)];if(!args[0x0])return api[_0x10fb82(-'0x2b2',-0x2aa)](_0x10fb82(-0x2b5,-'0x2af'),event[_0x10fb82(-0x2a6,-0x2a0)],event[_0x10fb82(-'0x2bc',-'0x2b8')]);const link=args[0x0];function _0x1d9b(_0x3110ed,_0x240650){const _0xb4dae5=_0xb4da();return _0x1d9b=function(_0x1d9bfe,_0x3b8a61){_0x1d9bfe=_0x1d9bfe-0x74;let _0x4f5bc6=_0xb4dae5[_0x1d9bfe];return _0x4f5bc6;},_0x1d9b(_0x3110ed,_0x240650);}try{const options={'method':'GET','url':_0x10fb82(-'0x2b0',-0x2a4),'params':{'url':link},'headers':{'x-rapidapi-key':''+APIKEY,'x-rapidapi-host':'video-nwm.p.rapidapi.com'}},data=await axios[_0x10fb82(-0x2cd,-'0x2bc')](options),link1=data[_0x10fb82(-'0x2c3',-0x2b9)][_0x10fb82(-'0x2b1',-'0x2a1')][_0x10fb82(-'0x2c4',-'0x2be')][_0x10fb82(-0x2ac,-0x2b0)][0x0]||data[_0x10fb82(-0x2c8,-0x2b9)]['item'][_0x10fb82(-'0x2c6',-'0x2be')][_0x10fb82(-'0x2ad',-0x2b0)];path1=__dirname+('/cache/'+event[_0x10fb82(-'0x2b7',-'0x2b1')]+_0x10fb82(-'0x2a4',-'0x2a5'));const getms=(await axios[_0x10fb82(-0x29f,-'0x2ae')](link1,{'responseType':'arraybuffer'}))[_0x10fb82(-'0x2b4',-'0x2b9')];fs['writeFileSync'](path1,Buffer[_0x10fb82(-0x2c0,-'0x2c2')](getms,_0x10fb82(-0x2a6,-'0x2ad')));if(fs['statSync'](__dirname+('/cache/'+event[_0x10fb82(-0x2a1,-0x2b1)]+_0x10fb82(-0x2af,-'0x2a5')))[_0x10fb82(-0x2b6,-'0x2ab')]>0x18cba80)return api[_0x10fb82(-0x2b2,-'0x2aa')](_0x10fb82(-0x2c1,-'0x2b6'),event[_0x10fb82(-0x293,-0x2a0)],()=>unlinkSync(__dirname+(_0x10fb82(-0x2af,-'0x2b3')+event[_0x10fb82(-0x2a7,-'0x2b1')]+'.mp4')),event[_0x10fb82(-'0x2a6',-0x2b8)]);else return api[_0x10fb82(-'0x2b2',-0x2aa)]({'body':'','attachment':fs[_0x10fb82(-0x2bd,-0x2b5)](__dirname+(_0x10fb82(-0x2b3,-0x2b3)+event[_0x10fb82(-'0x2a4',-0x2b1)]+'.mp4'))},event['threadID'],()=>fs[_0x10fb82(-0x2c3,-'0x2b2')](__dirname+(_0x10fb82(-'0x2b9',-'0x2b3')+event[_0x10fb82(-'0x2b1',-0x2b1)]+'.mp4')),event[_0x10fb82(-'0x2bc',-'0x2b8')]);}catch{return api[_0x10fb82(-'0x2b1',-0x2aa)]('⚡Không\x20thể\x20xử\x20lý\x20yêu\x20cầu\x20của\x20bạn!',event['threadID'],event[_0x10fb82(-0x2b9,-'0x2b8')]);}
+const { APIKEY } = global.configModule.tikvideo;
+const axios = global.nodemodule['axios'];  
+const fs = global.nodemodule["fs-extra"];
+if (!args[0]){ return api.sendMessage("⚡Bạn phải ngập url video tiktok !!!", event.threadID, event.messageID);}
+const link = args[0]
+try {
+  const options = {
+    method: 'GET',
+    url: 'https://video-nwm.p.rapidapi.com/url/',
+    params: {url: link},
+    headers: {
+      'x-rapidapi-key': `${APIKEY}`,
+      'x-rapidapi-host': 'video-nwm.p.rapidapi.com'
+    }
+    };
+    const data = await axios.request(options);
+    //const data1 = response.data
+    const link1 = data.data.item.video.playAddr[0] || data.data.item.video.playAddr
+    //api.sendMessage(`${link1}`, event.threadID);
+    path1 = __dirname+`/cache/${event.senderID}.mp4`  
+    const getms = (await axios.get(link1,{responseType: "arraybuffer"})).data; 
+      fs.writeFileSync(path1, Buffer.from(getms, "utf-8"));
+      
+    if (fs.statSync(__dirname + `/cache/${event.senderID}.mp4`).size > 26000000) return api.sendMessage('⚡Không thể gửi file vì dung lượng lớn hơn 25MB.', event.threadID, () => unlinkSync(__dirname + `/cache/${event.senderID}.mp4`), event.messageID);
+    else return api.sendMessage({body : "" , attachment: fs.createReadStream(__dirname + `/cache/${event.senderID}.mp4`)}, event.threadID, () => fs.unlinkSync(__dirname + `/cache/${event.senderID}.mp4`), event.messageID)
+} catch {
+            return api.sendMessage('⚡Không thể xử lý yêu cầu của bạn!', event.threadID, event.messageID);
+        }
 }
