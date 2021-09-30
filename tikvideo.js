@@ -8,7 +8,7 @@ module.exports.config = {
     usages: "[username]",
     cooldowns: 5,
     envConfig: {
-        APIKEY: "a012e05802msh4ce48bff26d5c0ap151d85jsn4edde7f89de0" //lấy tại https://rapidapi.com/godownloaderofficial/api/tiktok-download-video-no-watermark/
+        APIKEY: "" //lấy tại https://rapidapi.com/godownloaderofficial/api/tiktok-download-video-no-watermark/
     }
 };
 module.exports.run = async function ({ api, event, args, utils  })  {
