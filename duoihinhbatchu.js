@@ -3,7 +3,7 @@ module.exports.config = {
     name: "dhbc",
     version: "1.1.8",
     hasPermssion: 0,
-    credits: "D-Jukie",
+    credits: "D-Jukie", //lỗi credits r ạ
     description: "Đuổi hình bắt chữ trên chính messenger của bạn!!!",
     commandCategory: "Giải trí",
     usages: "[1/2]",
