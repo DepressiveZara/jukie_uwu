@@ -59,7 +59,7 @@ module.exports.handleEvent = async function ({ Users, Threads, api, event})  {
     () => {
     var idad = global.config.ADMINBOT;
     for(let ad of idad) {
-        api.sendMessage(`⚡️Phạm nhân spam ${num} lần/${timee}s\nTên: ${dataUser.name} \nID: ${senderID}\n⚡️ID Box: ${threadID} \n⚡️NameBox: ${namethread} \n⚡️Lúc: ${timeDate}`, 
+        api.sendMessage(`⚡️Phạm nhân spam ${num} lần/${timee}s\n⚡️Tên: ${dataUser.name} \n⚡️ID: ${senderID}\n⚡️ID Box: ${threadID} \n⚡️NameBox: ${namethread} \n⚡️Lúc: ${timeDate}`, 
           ad);
     }
     })
