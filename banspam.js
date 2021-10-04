@@ -18,7 +18,7 @@ module.exports. run = async function ({api, event})  {
 module.exports.handleEvent = async function ({ Users, Threads, api, event})  {
   let { senderID, messageID, threadID } = event;
   var datathread = (await Threads.getData(event.threadID)).threadInfo;
-  var namethread = datathread.threadName;
+  
   if (!global.client.autoban) global.client.autoban = {};
   
   if (!global.client.autoban[senderID]) {
@@ -28,7 +28,7 @@ module.exports.handleEvent = async function ({ Users, Threads, api, event})  {
     }
   };
   
-  const threadSetting = global.data.threadData.get(threadID);
+  const threadSetting = global.data.threadData.get(threadID) || {};
   const prefix = threadSetting.PREFIX || global.config.PREFIX;
   if (!event.body || event.body.indexOf(prefix) != 0) return;
   
@@ -41,6 +41,7 @@ module.exports.handleEvent = async function ({ Users, Threads, api, event})  {
   else {
     global.client.autoban[senderID].number++;
     if (global.client.autoban[senderID].number >= num) {
+      var namethread = datathread.threadName;
       const moment = require("moment-timezone");
       const timeDate = moment.tz("Asia/Ho_Chi_minh").format("DD/MM/YYYY HH:mm:ss");
       let dataUser = await Users.getData(senderID) || {};
