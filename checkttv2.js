@@ -2,7 +2,7 @@ var limit = 20; //số thành viên mỗi lần check
 module.exports.config = {
 	name: "checktt",
 	version: "1.8.0",
-	hasPermssion: 2,
+	hasPermssion: 0,
 	credits: "Mirai Team fix get by D-Jukie",
 	description: "Kiểm tra lượt tương tác trong nhóm",
 	commandCategory: "Nhóm",
@@ -43,7 +43,9 @@ var mention = Object.keys(event.mentions);
             msg += `\n--Trang ${page}/${numPage}--\n🌻Dùng ${global.config.PREFIX}checktt all số trang🌻`
             return api.sendMessage(msg, event.threadID);
         }        
-    else if (mention[0]) {
+    else    
+    if(event.type == "message_reply") { mention[0] = event.messageReply.senderID }
+    if (mention[0]) {
             var { participantIDs } =(await Threads.getData(event.threadID)).threadInfo;
             //const countMess = (await Currencies.getData(event.senderID)).exp
             const listUserID = event.participantIDs
