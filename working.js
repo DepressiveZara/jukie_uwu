@@ -4,7 +4,7 @@
 */
 module.exports.config = {
     name: "working",
-    version: "1.0.2",
+    version: "1.0.1",
     hasPermssion: 0,
     credits: "⚡D-Jukie", 
     description: "Làm việc để có tiền, có làm thì mới có ăn",
@@ -23,8 +23,9 @@ module.exports.languages = {
     }
 }
 module.exports.handleReply = async ({ event, api, handleReply, Currencies, getText }) => {
-    const { threadID, messageID, senderID } = event;
-    let data = (await Currencies.getData(senderID)).data || {};
+const { threadID, messageID, senderID } = event;
+let data = (await Currencies.getData(senderID)).data || {};
+if (handleReply.author != event.senderID) return api.sendMessage("Tuổi lồn", event.threadID, event.messageID)
 //random coins nhận được khi làm việc ít nhất 200
 var coinscn = Math.floor(Math.random() * 401) + 200; //random coins khi làm ở khu công nghiệp
 var coinsdv = Math.floor(Math.random() * 801) + 200; //random coins khi làm ở khu dịch vụ
