@@ -6,11 +6,11 @@ const fontsOthers = 30
 const colorName = "#00FF00"
 module.exports.config = {
   name: "cardbox",
-  version: "1.0.1",
+  version: "2.0.0",
   hasPermssion: 0,
   credits: "D-Jukie",
-  description: "wanted",
-  commandCategory: "Giải trí",
+  description: "Xem thông tin nhóm chat của bạn",
+  commandCategory: "Nhóm",
   usages: "",
   cooldowns: 10,
   dependencies: {
