@@ -1,6 +1,6 @@
 module.exports.config = {
     name: "banner",
-    version: "1.0.0",
+    version: "1.0.1",
     hasPermssion: 0,
     credits: "D-Jukie convert từ Goat",
     description: "Tạo banner",
